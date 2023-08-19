@@ -1,0 +1,23 @@
+version: '3'
+
+# 网络
+networks:
+  common:
+    driver: bridge
+
+services:
+### MySQL ################################################
+  mysql:
+    restart: always
+    build:
+      context: ./mysql
+    container_name: mysql-docker
+    command: --innodb-use-native-aio=0
+    environment:
+      MYSQL_DATABASE: test
+      MYSQL_ROOT_PASSWORD: root
+    # volumes:
+    #   - "./mysql/data:/var/lib/mysql"           # 挂载数据目录
+    #   - "./mysql/logs:/var/log/mysql"
+    ports:
+      - "3306:3306"

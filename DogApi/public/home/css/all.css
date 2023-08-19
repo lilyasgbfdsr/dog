@@ -1,0 +1,201 @@
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,p,blockquote,th,td {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: white;
+    font-size: 14px;
+    font-family: "Microsoft YaHei","Hiragino Sans GB" !important;
+}
+
+td,th,caption {
+    font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: normal;
+    font-size: 100%;
+}
+
+address, caption, cite, code, dfn, em, strong, th, var {
+    font-style: normal;
+    font-weight: normal;
+}
+
+a,a:hover,a:active,a:visited,a:link,a:focus {
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    background: none;
+    text-decoration: none;
+}
+
+header {
+    height: 60px;
+    background: #ffb866;
+    color: #fff;
+    text-align: center;
+    line-height: 60px;
+}
+
+.form {
+    margin: 20px auto;
+    width: 90%;
+}
+
+.form label {
+    width: 20%;
+    color: #ffb866;
+}
+
+.form label small,.tit {
+    margin-left: 40px;
+    color: #fa6658;
+}
+
+.form .row,.form .row2 {
+    clear: both;
+    margin-bottom: 20px;
+    display: block
+}
+
+.form .row input,.form .row select {
+    width: 60%;
+    margin-left: 10%;
+    border-radius: 4px;
+    -webkit-appearance: none;
+    outline: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    border: 1px solid #ccc;
+    padding: 4px;
+}
+.form .row select {
+    width: 62%
+}
+.time_box {
+    width: 66%;
+    margin-left: 10%;
+    display: inline-block;
+}
+
+.time_box button {
+    color: #fff;
+    background-color: #ec971f;
+    border-color: #d58512;
+    padding: 4px 2px;
+    font-size: 12px;
+    font-weight: normal;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    margin: 0px auto;
+    width: 22%;
+}
+
+.time_box button.act {
+    color: #fff;
+    background-color: #fa6658;
+    border-color: #fa6658;
+}
+
+#mony {
+    border: none;
+    color: #ff0000;
+    border-bottom: 1px solid #ccc;
+    text-align: right;
+    border-radius: 0px;
+    background: none;
+}
+
+.form .row2 label {
+    color: dimgray;
+}
+
+#button {
+    color: #fff;
+    background-color: #ec971f;
+    border-color: #d58512;
+    padding: 6px 12px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    color: #fff;
+    margin: 0px auto;
+    width: 40%;
+    margin-top: 30px;
+}
+.bz{margin: 0px auto 20px;color: #ccc;}
+.time_box button{margin-top:20px;}
+
+.order_content {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+.order_content .order_item {
+    width: 80%;
+    background-image: url(../images/tab_bg.png);
+    padding: 20px;
+    background-size: 100%;
+    border-radius: 10px;
+    position: relative;
+    margin: 20px auto 0px;
+}
+.order_item .times_box {
+    color: #fff;
+    background: #98112a;
+    border-radius: 5px;
+    padding: 4px 6px;
+}
+.order_item .img_box {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    color: #ea5c49;
+}
+.order_item_gray {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray;
+}
+.order_item .success {
+    display: flex;
+}
+.order_item_gray .done {
+    display: flex;
+}
+.order_item_gray .success {
+    display: none;
+}
